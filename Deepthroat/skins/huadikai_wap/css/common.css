@@ -1,0 +1,84 @@
+@charset "utf-8";
+html { }
+body { padding:0;margin:0; font:12px/1.5 "微软雅黑"; }
+ul,li { margin:0; padding:0; list-style:none; }
+a { text-decoration:none; }
+img { border:0; display:block; }
+hr { height:0; border:0px; border-bottom:1px solid #E5E5E5; }
+.wrap { margin:20px; overflow:hidden; }
+.fl { float:left; }.fr { float:right; }
+
+
+
+
+.menu { width:100%; overflow:hidden;background:url(../img/menu_bg.png); }
+.menu .menu-list { margin:0px 20px; }
+.menu li { float:left; text-align:center; }
+.menu li a { display:block;font-size:13px;color:#333;width:84px;height:42px;line-height:42px;background:url(../img/menu_line.png) no-repeat right;}
+.menu li a.home { background:url(../img/nav_on.png);color:#fff; }
+.menu li a.on { background:url(../img/nav_in.png); }
+.menu .btn { display:block; width:20px; height:42px; line-height:42px; background:url(../img/menu_btn.png); }
+.menu .btn i { margin-top:1px; }
+.menu .prev { float:left; }.menu .next { float:right; }
+
+.banner li { float:left; display:block; }
+
+
+
+.tit { display:block; overflow:hidden; height:40px; line-height:40px; background:url(../img/tit_bg.png) center center; color:#FFF; margin-bottom:3%; }
+.tit .fl { margin-left:10px; font-weight:bold; font-size:13px; }
+.tit .fr a { color:#FFF; margin-right:10px; }
+.con img{ max-width:100%; }
+.con ul.pic { overflow:hidden; }
+.con ul.pic li { width:48%; float:left; border:1px solid #DDD; margin-bottom:3%; overflow:hidden; background:#FAFAFA; }
+.con ul.pic li .li-thumb { padding:10px; }
+.con ul.pic li .li-thumb span { display:block; width:100%; height:130px; overflow:hidden; text-align:center; }
+.con ul.pic li .li-thumb span img { display:inline-block; max-width:100%; max-height:100%; vertical-align:middle; }
+.con ul.pic li .li-thumb span i { display:inline-block; vertical-align:middle; height:100%; }
+.con ul.pic li .li-title { display:block; border-top:1px solid #DDD; height:40px; line-height:40px; text-align:center; color:#555; }
+.con ul.pic li:nth-child(even) { float:right; }
+.con ul.txt { overflow:hidden; }
+.con ul.txt li { overflow:hidden; height:35px; line-height:35px; border-bottom:1px solid #DDD; }
+.con ul.txt li .li-title { float:left; width:70%; overflow:hidden; text-overflow:ellipsis; color:#555; }
+.con ul.txt li .li-date { float:right; width:30%; text-align:right; color:#555; }
+.con div.txt { overflow:hidden; margin-bottom:3%; }
+.con div.txt .fl { width:50%; height:150px; overflow:hidden; text-align:right; }
+.con div.txt .fl img { float:right; }
+.con div.txt .fr { width:46%; height:150px; overflow:hidden;text-overflow:ellipsis; }
+.con div.txt .fr p { margin:0; margin-bottom:5px; font-size:2vw;  }
+.con div.txt .fr p strong { font-size:14px; }
+
+.listpage{ margin-top:10px;}
+.xiaocms-page{ text-align:center;}
+.xiaocms-page span{ margin:0 5px; color:#0d73cc;}
+.xiaocms-page a{ margin:0 5px; text-decoration:none; color:#555;}
+
+
+.foot { background:#EEE; overflow:hidden; color:#555; padding:20px 0px 10px 0px; margin-bottom:50px; }
+.foot a { color:#555; margin-right:10px; }
+.foot p { margin:0; margin-bottom:10px; }
+.foot .fr { float:none; text-align:center; }
+
+
+
+.fixed { background:#333; position:fixed; left:0px; right:0; bottom:0; }
+.fixed ul li { float:left; width:25%; height:50px; line-height:80px; }
+.fixed ul li a { display:block; width:100%; height:100%; border-right:1px solid #444; text-align:center; color:#FFF; }
+.fixed ul li a:hover { background-color:#1d64a2; }
+.fixed ul .dh a { background:url(../img/dh.png) no-repeat center 8px; }
+.fixed ul .dt a { background:url(../img/dt.png) no-repeat center 8px; }
+.fixed ul .qq a { background:url(../img/qq.png) no-repeat center 8px; }
+.fixed ul .zx a { background:url(../img/zx.png) no-repeat center 8px; }
+
+
+.clearfix:before,.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+[class*=ico-arrow-] { display:inline-block; width:15px; height:15px; line-height:15px; vertical-align:text-top; background-image:url("../img/arrow.png"); background-repeat:no-repeat; }
+.ico-white{background-image:url("../img/arrow_w.png");}
+.ico-arrow-left{ background-position:-15px 0; }
+.ico-arrow-right{ background-position:0 0; }
+.ico-arrow-up{ background-position:-30px 0; }
+.ico-arrow-down{ background-position:-45px 0; }
+.disabled { opacity:.5; }

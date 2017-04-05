@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>A15-014 - 尊享推拉/吊趟门 - 产品中心 - 裕安门窗</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="js/jquery.min.js"></script>
+<script src="js/sly.min.js"></script>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<div class="head"><img src="img/head.png" width="100%"/></div>
+
+<div class="menu">
+	<a href="javascript:void(0)" class="btn prev"><i class="ico-arrow-right ico-white"></i></a>
+	<a href="javascript:void(0)" class="btn next"><i class="ico-arrow-left ico-white"></i></a>
+	<div class="menu-list">
+		<ul class="clearfix">
+			<li><a href="index.php" class="home">网站首页</a></li>
+						<li><a href="index.php?catid=1" >产品中心</a></li>
+						<li><a href="index.php?catid=13" >案例展示</a></li>
+						<li><a href="index.php?catid=9" >招商加盟</a></li>
+						<li><a href="index.php?catid=16" >新闻资讯</a></li>
+						<li><a href="index.php?catid=19" >关于裕安</a></li>
+						<li><a href="index.php?catid=25" >联系我们</a></li>
+					</ul>
+	</div>
+</div>
+	<div class="wrap">
+		<div class="con">
+			<h1>A15-014</h1>
+			<hr />
+			<img src="/data/upload/image/201506/bd79a6d7449c7da66c2bf44dc8aada1a.jpg.thumb.800x800.jpg" />
+			<hr />
+			<p>产品型号：A15-014</p>
+			<p>产品分类：尊享推拉/吊趟门</p>
+			<p>产品颜色：黄花梨</p>
+			<p>产品款式：中柱+暗花</p><p>可选颜色：红檀香、黄檀香、白色、电泳香槟、水曲柳、亮砂香槟、黄花梨、桃木</p><p>产品简介：采用德国丝吉利娅或者HOPO进口五金配件（300kg承重），配置镶嵌式不锈钢轨道，
+配置5+27A+5中空双层钢化玻璃，
+型腔采用三元乙丙硅胶密封胶条，其隔音、	隔热、防水、气密性更好，
+铝材壁厚：1.5mm</p>			<hr />
+			<p><img alt="" src="/data/upload/image/201506/86f85714faff935b6c8a2a8f66f810fc.jpg" /></p>
+		</div>
+	</div>
+
+<div class="foot" margin-bottom:50px;>
+	<div class="fl"></div>
+	<div class="fr">
+		<p>COPYRIGHT © 2015 裕安门窗  ALL RIGHTS RESERVED.</p>
+		<p><a href="http://m.yooen.cn">手机版</a><a href="http://www.yooen.cn">电脑版</a>技术支持：<a href="http://m.aiduweb.com">佛山市艾度网络科技有限公司</a></p>
+	</div>
+</div>
+<div class="fixed">
+	<ul>
+		<li class="dh"><a href="tel:400-0228-300">电话</a></li>
+		<li class="dt"><a href="http://f.amap.com/04EMLT" target="_blank">地图</a></li>
+		<li class="qq"><a href="mqq://im/chat?chat_type=wpa&uin=800066935&version=1&src_type=web" target="_blank">QQ</a></li>
+		<li class="zx"><a href="http://webim.qiao.baidu.com//im/index?siteid=7172118&ucid=10815356" target="_blank">咨询</a></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	(function () {
+		var $menu = $('.menu-list')
+		$menu.sly({horizontal:1,itemNav:'basic',mouseDragging:1,touchDragging:1,releaseSwing:1,speed:300,dragHandle:1,dynamicHandle:1,clickBar:1,prevPage:$menu.parent().find('.prev'),nextPage:$menu.parent().find('.next')});
+		$(window).bind('load resize',function(){
+			if($(window).width()<460){
+				var mlw = parseInt($menu.outerWidth()/4)
+			} else if($(window).width()<640){
+				var mlw = parseInt($menu.outerWidth()/5)
+			} else if($(window).width()<860){
+				var mlw = parseInt($menu.outerWidth()/6)
+			} else {
+				var mlw = parseInt($menu.outerWidth()/7)
+			}
+			$menu.find('li a').css('width',mlw);
+			$menu.sly('reload');
+		});
+	}());
+</script>
+</body>
+</html>

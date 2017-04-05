@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script src="js/jquery.min.js"></script>
+<script src="js/sly.min.js"></script>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="banner">
+	<div class="banner-list">
+        <ul class="clearfix">
+                <li><img src="img/banner.jpg" width="100%"/></li>
+                <li><img src="img/banner.jpg" width="100%"/></li>
+                <li><img src="img/banner.jpg" width="100%"/></li>
+                <li><img src="img/banner.jpg" width="100%"/></li>
+        </ul>
+	</div>
+</div>
+<script type="text/javascript">
+	(function () {
+		var $banner = $('.banner-list');
+		$banner.sly({horizontal:1,itemNav:'basic',mouseDragging:1,touchDragging:1,releaseSwing:1,speed:300,dragHandle:1,dynamicHandle:1,clickBar:1,cycleBy:'pages',cycleInterval:5000});
+		$(window).bind('load resize',function(){
+			var blw = $banner.outerWidth()
+			$banner.find('li').css('width',blw);
+			$banner.sly('reload');
+		});
+	}());
+</script>
+
+
+</body>
+</html>
